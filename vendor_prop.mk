@@ -20,6 +20,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
     af.fast_track_multiplier=1 \
     audio.deep_buffer.media=true \
     audio.offload.video=true \
