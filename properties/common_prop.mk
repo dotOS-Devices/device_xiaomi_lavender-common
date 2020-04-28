@@ -219,6 +219,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcomsysd.enabled=1 \
     ro.vendor.extension_library=libqti-perfd-client.so
+    ro.vendor.perf.scroll_opt=true
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
