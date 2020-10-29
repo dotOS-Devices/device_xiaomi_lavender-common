@@ -1,6 +1,3 @@
-# Art
-ro.sys.fw.dex2oat_thread_count=8
-
 # Audio
 audio.safemedia.bypass=true
 audio.offload.min.duration.secs=30
