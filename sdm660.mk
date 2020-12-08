@@ -634,3 +634,7 @@ PRODUCT_PACKAGES += \
 # Recorder
 PRODUCT_PACKAGES += \
     OPScreenRecorder
+
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    GalleryGo
