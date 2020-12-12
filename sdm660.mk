@@ -630,3 +630,7 @@ PRODUCT_PACKAGES += \
   init.parallax.sh \
   init.blur.rc \
   init.blur.sh
+
+# Recorder
+PRODUCT_PACKAGES += \
+    OPScreenRecorder
