@@ -59,9 +59,6 @@ mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
 vidc.enc.target_support_bframe=1
 
-# Netflix custom property
-ro.netflix.bsp_rev=Q660-13149-1
-
 # Proximity
 gsm.proximity.enable=true
 
