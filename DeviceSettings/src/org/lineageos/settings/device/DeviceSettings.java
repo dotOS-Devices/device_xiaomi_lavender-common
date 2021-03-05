@@ -24,6 +24,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
 import org.lineageos.settings.device.kcal.KCalSettingsActivity;
+import org.lineageos.settings.device.speaker.ClearSpeakerActivity;
 import org.lineageos.settings.device.preferences.SecureSettingListPreference;
 import org.lineageos.settings.device.preferences.SecureSettingSwitchPreference;
 import org.lineageos.settings.device.preferences.VibrationSeekBarPreference;
@@ -66,11 +67,21 @@ public class DeviceSettings extends PreferenceFragment implements
 
     private static final String DEVICE_JASON_PACKAGE_NAME = "org.lineageos.settings.devicex";
     private static final String PREF_DEVICE_JASON = "device_jason";
+    
+    private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
+    private Preference mClearSpeakerPref;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.preferences_xiaomi_parts, rootKey);
         
+        mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
+        mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), ClearSpeakerActivity.class);
+            startActivity(intent);
+            return true;
+        });
+
         if (FileUtils.fileWritable(NOTIF_LED_PATH)) {
             NotificationLedSeekBarPreference notifLedBrightness =
                     (NotificationLedSeekBarPreference) findPreference(PREF_NOTIF_LED);
