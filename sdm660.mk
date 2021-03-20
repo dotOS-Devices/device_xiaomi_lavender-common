@@ -222,10 +222,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor
 
-# DeviceDoze
-PRODUCT_PACKAGES += \
-    DeviceDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -616,10 +612,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# DeviceSettings
-PRODUCT_PACKAGES += \
-   DeviceSettings
-   
 # IPA
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
 USE_DEVICE_SPECIFIC_IPACFG_MGR := true
+
+# XiaomiParts
+$(call inherit-product-if-exists, vendor/XiaomiParts/xiaomiparts.mk)
+
+PRODUCT_PACKAGES += \
+  init.xiaomiparts.rc \
+  init.xiaomi_parts.rc \
+  init.parallax.rc \
+  init.parallax.sh \
+  init.blur.rc \
+  init.blur.sh

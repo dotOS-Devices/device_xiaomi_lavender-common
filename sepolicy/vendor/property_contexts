@@ -21,9 +21,6 @@ persist.vendor.camera.                  u:object_r:camera_prop:s0
 vendor.camera.eis.gyro_name             u:object_r:camera_prop:s0
 vidc.enc.dcvs.extra-buff-count          u:object_r:vendor_default_prop:s0
 
-# Dirac
-persist.audio.dirac.                    u:object_r:dirac_prop:s0
-
 # Fingerprint
 fpc_kpi                                 u:object_r:vendor_default_prop:s0
 gf.debug.dump_data                      u:object_r:hal_fingerprint_prop:s0
@@ -54,3 +51,11 @@ sys.thermal.                            u:object_r:thermal_engine_prop:s0
 # vendor_default_prop
 vendor.camera.cpuperf.en                u:object_r:vendor_default_prop:s0
 vendor.display.lcd_density              u:object_r:vendor_default_prop:s0
+
+# Parallax
+persist.cpucore.profile                    u:object_r:cpucore_prop:s0
+persist.lkm.profile		           u:object_r:lkm_prop:s0
+persist.tcp.profile		           u:object_r:tcp_prop:s0
+
+# Blur
+persist.blur.profile		           u:object_r:blur_prop:s0
