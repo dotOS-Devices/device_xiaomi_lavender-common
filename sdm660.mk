@@ -51,7 +51,9 @@ COMMON_PATH := device/xiaomi/sdm660-common
 -include $(COMMON_PATH)/vendor_prop.mk
 
 # Inherit properties ($PATH_PROP)
+TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
 
 # A/B
