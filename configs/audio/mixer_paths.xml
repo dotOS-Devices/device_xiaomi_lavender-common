@@ -110,7 +110,7 @@
     <ctl name="DISPLAY_PORT Mixer MultiMedia14" value="0" />
     <ctl name="DISPLAY_PORT Mixer MultiMedia15" value="0" />
     <ctl name="DISPLAY_PORT Mixer MultiMedia16" value="0" />
-    <ctl name="Display Port RX Bit Format" value="S16_LE" />
+    <ctl name="Display Port RX Bit Format" value="S24_LE" />
     <ctl name="Display Port RX SampleRate" value="KHZ_48" />
     <ctl name="Display Port RX Channels" value="Two" />
     <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia1" value="0" />
@@ -172,16 +172,16 @@
     <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia14" value="0" />
     <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia15" value="0" />
     <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia16" value="0" />
-    <ctl name="USB_AUDIO_RX Format" value="S16_LE" />
+    <ctl name="USB_AUDIO_RX Format" value="S24_LE" />
     <ctl name="USB_AUDIO_RX SampleRate" value="KHZ_48" />
     <ctl name="USB_AUDIO_RX Channels" value="Two" />
     <ctl name="MultiMedia1 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia2 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia5 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia8 Mixer USB_AUDIO_TX" value="0" />
-    <ctl name="USB_AUDIO_TX Format" value="S16_LE" />
+    <ctl name="USB_AUDIO_TX Format" value="S24_LE" />
     <ctl name="USB_AUDIO_TX SampleRate" value="KHZ_48" />
-    <ctl name="USB_AUDIO_TX Channels" value="One" />
+    <ctl name="USB_AUDIO_TX Channels" value="Two" />
     <ctl name="MultiMedia6 Mixer INT3_MI2S_TX" value="0" />
     <ctl name="INT4_MI2S_RX Channels" value="One" />
     <ctl name="PRI_MI2S_RX Channels" value="One" />
@@ -202,6 +202,8 @@
     <ctl name="AIF1_VI_SDW Mixer SPKR_VI_1" value="0" />
     <ctl name="AIF1_VI_SDW Mixer SPKR_VI_2" value="0" />
     <ctl name="INT5 MI2S VI MONO" value="Left" />
+    <!-- 24-bit ASM config -->
+    <ctl name="ASM Bit Width" value="24"/>
     <!-- HFP start -->
     <ctl name="HFP_SLIM7_UL_HL Switch" value="0" />
     <ctl name="INT4_MI2S_RX Port Mixer SLIM_7_TX" value="0" />
