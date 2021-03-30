@@ -224,6 +224,10 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor
 
+# Display Hal
+USE_DEVICE_SPECIFIC_DISPLAY := true
+DEVICE_SPECIFIC_DISPLAY_PATH := hardware/qcom-caf/msm8998/display-r
+
 # DeviceDoze
 PRODUCT_PACKAGES += \
     DeviceDoze
