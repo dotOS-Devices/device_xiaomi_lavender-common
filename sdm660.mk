@@ -624,10 +624,6 @@ PRODUCT_PACKAGES += \
 # WiFi Display JAR
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# DeviceSettings
-PRODUCT_PACKAGES += \
-   DeviceSettings
    
 # IPA
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
