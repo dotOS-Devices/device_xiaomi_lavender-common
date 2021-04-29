@@ -60,7 +60,7 @@ TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
 OVERRIDE_QCOM_HARDWARE_VARIANT := msm8998-r
 
 # A/B
-ifeq ($(ENABLE_AB), true)
+ifeq ($(AB_OTA_UPDATER), true)
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
