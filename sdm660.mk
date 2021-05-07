@@ -44,14 +44,14 @@ $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/config.mk)
 # Common Tree Path
 COMMON_PATH := device/xiaomi/sdm660-common
 
-# Vendor properties
--include $(COMMON_PATH)/vendor_prop.mk
+# Properties
+-include $(COMMON_PATH)/properties/common_prop.mk
 
-# Inherit properties ($PATH_PROP)
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
+# Properties ($PATH_PROP)
+TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/properties/system_ext.prop
 
 # R HALs
 OVERRIDE_QCOM_HARDWARE_VARIANT := msm8998-r
