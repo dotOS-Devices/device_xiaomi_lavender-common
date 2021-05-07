@@ -24,6 +24,7 @@
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := sdm660
+OVERRIDE_QCOM_HARDWARE_VARIANT := msm8998-r
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -52,9 +53,6 @@ TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
 TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/properties/system_ext.prop
-
-# R HALs
-OVERRIDE_QCOM_HARDWARE_VARIANT := msm8998-r
 
 # A/B
 ifeq ($(AB_OTA_UPDATER), true)
