@@ -46,7 +46,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/config.mk)
 COMMON_PATH := device/xiaomi/sdm660-common
 
 # Properties
--include $(COMMON_PATH)/properties/common_prop.mk
+include $(COMMON_PATH)/properties/common_prop.mk
 
 # Properties ($PATH_PROP)
 TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
