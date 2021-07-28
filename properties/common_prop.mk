@@ -238,6 +238,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
     persist.vendor.radio.add_power_save=1
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.vendor.radio.aosp_usr_pref_sel=true
+
 # Rendering
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
