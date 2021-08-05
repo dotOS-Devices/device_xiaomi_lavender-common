@@ -146,6 +146,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
     debug.sf.use_phase_offsets_as_durations=1 \
     debug.sf.late.sf.duration=10500000 \
@@ -156,6 +157,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.earlyGl.app.duration=21000000 \
     debug.cpurend.vsync=false \
     debug.hwui.use_buffer_age=false \
+    debug.gralloc.enable_fb_ubwc=1 \
     vendor.display.disable_skip_validate=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.display.enable_default_color_mode=0 \
