@@ -91,7 +91,7 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 endif
 
-# Adapt Launch 
+# Adapt Launch
 PRODUCT_COPY_FILES += \
 $(COMMON_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
 
@@ -324,7 +324,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.target.rc \
-    init.xiaomi_parts.rc \
     init.verity.rc \
     ueventd.qcom.rc
 
@@ -340,7 +339,7 @@ endif
 # Ion
 PRODUCT_PACKAGES += \
     libion
-    
+
 # Iorap
 PRODUCT_PACKAGES += \
     iorap-app-startup-runner
@@ -396,7 +395,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # RRO configuration
 TARGET_USES_RRO := true
-    
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -533,7 +532,7 @@ BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 # Shims
 PRODUCT_PACKAGES += \
     camera.sdm660_shim
-    
+
 # SimpleDeviceConfigOverlay
 PRODUCT_PACKAGES += \
     SimpleDeviceConfigOverlay
@@ -619,7 +618,7 @@ PRODUCT_PACKAGES += \
 # WiFi Display JAR
 PRODUCT_BOOT_JARS += \
     WfdCommon
-   
+
 # IPA
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
 USE_DEVICE_SPECIFIC_IPACFG_MGR := true
