@@ -172,7 +172,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.backup.ntpServer="0.pool.ntp.org" \
     persist.vendor.overlay.izat.optin=rro
-    
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
@@ -200,7 +200,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.mm.enable.qcom_parser=13631487 \
     vendor.video.disable.ubwc=1 \
     ro.media.recorder-max-base-layer-fps=60
-    
+
 # MISC
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
@@ -225,7 +225,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.coresight.config=stm-events \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.sib16_support=1 \
-    persist.vendor.qti.telephony.vt_cam_interface=1 \
+    persist.vendor.qti.telephony.vt_cam_interface=2 \
     persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.data_con_rprt=1 \
