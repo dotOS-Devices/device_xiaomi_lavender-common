@@ -157,6 +157,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.earlyGl.app.duration=21000000 \
     debug.cpurend.vsync=false \
     debug.hwui.use_buffer_age=false \
+    debug.hwui.renderer=skiagl \
     debug.gralloc.enable_fb_ubwc=1 \
     vendor.display.disable_skip_validate=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
@@ -166,7 +167,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
     ro.vendor.display.cabl=2 \
-    vendor.display.enable_default_color_mode=1
+    vendor.display.enable_default_color_mode=1 \
+    debug.sf.latch_unsignaled=0 \
+    persist.sys.sf.disable_blurs=0
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -274,7 +277,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_touch_timer_ms=5000 \
     ro.surface_flinger.set_idle_timer_ms=9000 \
     ro.surface_flinger.wcg_composition_dataspace=143261696 \
-    debug.performance.tuning=1
+    debug.performance.tuning=1 \
+    ro.surface_flinger.use_color_management=true \
+    ro.surface_flinger.use_color_management=1
 
 # System restart
 PRODUCT_PROPERTY_OVERRIDES += \
