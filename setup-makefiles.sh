@@ -46,6 +46,7 @@ if ([[ "$ONLY_DEVICE" = "false" ]] || [[ -z "$ONLY_DEVICE" ]]) && [[ -s "${COMMO
     write_headers "$GUARDED_DEVICES_COMMON"
     # The common blobs
     write_makefiles "$COMMON_DIR"/proprietary-files.txt true
+    write_makefiles "$COMMON_DIR"/proprietary-files-ir.txt true
     # Finish
     write_footers
 fi
@@ -62,6 +63,7 @@ if ([[ "$ONLY_COMMON" = "false" ]] || [[ -z "$ONLY_COMMON" ]]) && [[ -s "${DEVIC
     write_headers "$GUARDED_DEVICES"
     # The standard device blobs
     write_makefiles "${DEVICE_DIR}"/proprietary-files.txt true
+    write_makefiles "$COMMON_DIR"/proprietary-files-ir.txt true
     # We are done!
     write_footers
 fi

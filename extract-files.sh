@@ -110,6 +110,7 @@ setup_vendor "$DEVICE_COMMON" "$VENDOR" "$ROOT" true $CLEAN_VENDOR
 
 if [[ "$ONLY_DEVICE" = "false" ]] && [[ -s "${COMMON_DIR}"/proprietary-files.txt ]]; then
     extract "$COMMON_DIR"/proprietary-files.txt "$SRC" "${KANG}" --section "${SECTION}"
+    extract "$COMMON_DOR"/proprietary-files-ir.txt "$SRC" "${KANG}" --section "${SECTION}"
 fi
 if [[ "$ONLY_COMMON" = "false" ]] && [[ -s "${DEVICE_DIR}"/proprietary-files.txt ]]; then
     if [[ ! "$IS_COMMON" = "true" ]]; then
@@ -118,6 +119,7 @@ if [[ "$ONLY_COMMON" = "false" ]] && [[ -s "${DEVICE_DIR}"/proprietary-files.txt
     # Reinitialize the helper for device
     setup_vendor "$DEVICE" "$VENDOR" "$ROOT" "$IS_COMMON" "$CLEAN_VENDOR"
     extract "${DEVICE_DIR}"/proprietary-files.txt "$SRC" "${KANG}" --section "${SECTION}"
+    extract "$COMMON_DOR"/proprietary-files-ir.txt "$SRC" "${KANG}" --section "${SECTION}"
 fi
 
 "$COMMON_DIR"/setup-makefiles.sh
